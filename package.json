@@ -1,7 +1,8 @@
 {
   "name": "datacite-footer",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "Kristian Garza <kj.garza@gmail.com> (https://github.com/kjgarza)",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
