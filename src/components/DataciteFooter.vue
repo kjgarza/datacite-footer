@@ -1,7 +1,6 @@
 <template>
 
 <div class='row footer'>
-  <!-- <div class="container-fluid"> -->
     <div class='col-md-3'>
       <h4>About DataCite</h4>
       <ul>
@@ -59,7 +58,6 @@
         <span class="color-description"></span>
       </a>
     </div>
-  <!-- </div> -->
 </div>
 </template>
 
@@ -188,44 +186,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,400italic,600italic');
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
-
-div.footer {
-  position: absolute;
-  bottom: 0;
-  height: 300px;
-  width: 100%;
-  color: #9A9AA8;
-  font-weight: 300;
-  background-color: #E3E3E3;
-  padding: .75em 0;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Raleway", "Helvetica", Arial, sans-serif;
-  }
-  h4, h5 {
-    font-size: 15;
-    font-weight: 600;
-    margin-top: .5em;
-    margin-bottom: .1em;
-    line-height: 1.2em;
-  }
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  a, a:hover, a:visited {
-    color: #9A9AA8;
-  }
-  .share h4 {
-    color: gray;
-    margin-bottom: .5em;
-  }
-  .share a {
-    margin-right: 1em;
-    font-size: 16px;
-  }
+@import url('https://assets.datacite.org/stylesheets/datacite.css');
 </style>
+
+
