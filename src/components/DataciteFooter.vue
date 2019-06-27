@@ -191,7 +191,7 @@ export default {
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,400italic,600italic');
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
 
 div.footer {
   position: absolute;
@@ -203,6 +203,8 @@ div.footer {
   background-color: #E3E3E3;
   padding: .75em 0;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Raleway", "Helvetica", Arial, sans-serif;
   }
   h4, h5 {
     font-size: 15;
@@ -210,8 +212,6 @@ div.footer {
     margin-top: .5em;
     margin-bottom: .1em;
     line-height: 1.2em;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Raleway", "Helvetica", Arial, sans-serif;
   }
   ul {
     list-style: none;

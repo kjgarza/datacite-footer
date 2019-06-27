@@ -18,6 +18,17 @@ npm install
 
 ```
 
+
+### Distribute
+
+
+```shell
+
+vue build --target wc 'src/components/DataciteFooter.vue'
+npm publish
+
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
