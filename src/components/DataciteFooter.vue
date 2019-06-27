@@ -190,7 +190,8 @@ export default {
 <style scoped>
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,400italic,600italic');
-
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
 
 div.footer {
   position: absolute;
