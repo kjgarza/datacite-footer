@@ -1,5 +1,8 @@
 # datacite-footer
 
+[![npm version](https://badge.fury.io/js/datacite-footer.svg)](https://badge.fury.io/js/datacite-footer)
+[![](https://data.jsdelivr.com/v1/package/npm/datacite-footer/badge)](https://www.jsdelivr.com/package/npm/datacite-footer)
+
 ## Project setup
 ```
 npm install
