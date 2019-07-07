@@ -54,14 +54,15 @@
         </li>
       </ul>
       <a href="http://status.datacite.org" target="_blank">
-        <span v-bind:class="statusClass"></span>
-        <span class="color-description">{{statusDescription}}</span>
+        <statuspage-widget src="https://status.datacite.org/"></statuspage-widget>
       </a>
     </div>
 </div>
 </template>
 
 <script>
+
+
 export default {
   name: 'DataciteFooter',
   props: {
@@ -179,28 +180,31 @@ export default {
         statusDescription: "All Systems Operational"
       }
     },
-    computed:{
+  computed:{
       statusClass(){
         return "color-dot " + this.indicator
       }
     },
   methods:{
-    getStatus: function(){
-      if (typeof StatusPage !== 'undefined') {
-        let sp = new StatusPage.page({ page: 'nmtzsv0smzk5'});
-        let self = this;
+    insertMarkup(){
+      let tag = document.createElement('script');    
 
-        sp.summary({
-          success(data) {
-            this.statusDescription = data.status.description
-            this.indicator = data.status.indicator
-          }
-        });
-      }
+      tag = document.createElement('script');    
+      tag.setAttribute('type',"application/javascript")
+      tag.setAttribute('src',"https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-bundle.js")
+      tag.async = true
+      document.head.appendChild(tag)
+
+      tag = document.createElement('script');    
+      tag.setAttribute('type',"application/javascript")
+      tag.setAttribute('src',"https://unpkg.com/@statuspage/status-widget/dist/index.js")
+      tag.async = true
+      document.head.appendChild(tag)
+
     }
   },
-  mounted(){
-    this.getStatus()
+  created() {
+    this.insertMarkup()
   }
 }
 </script>
@@ -212,5 +216,4 @@ export default {
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
 @import url('https://assets.datacite.org/stylesheets/datacite.css');
 </style>
-
 
